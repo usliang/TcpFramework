@@ -1,5 +1,9 @@
 import java.net.*;
 
+/**
+ * @author lliang
+ *
+ */
 public class TcpClient {
 	//member variables
 	private String serverIp;
@@ -12,6 +16,12 @@ public class TcpClient {
 	
 	
 	//constructor
+	/**
+	 * @param serverIp
+	 * @param serverPort
+	 * @param task
+	 * @throws IllegalArgumentException
+	 */
 	public TcpClient(String serverIp, int serverPort, DoByProtocal task) throws IllegalArgumentException {
 		if (serverIp==null || task==null) {
 			throw new IllegalArgumentException("Either serverIp argument or task argument is null");
@@ -37,6 +47,9 @@ public class TcpClient {
 			}
 		}
 	}
+	/**
+	 * 
+	 */
 	public void stop() {
 		stopper.stop();
 		if (socket!=null) {
