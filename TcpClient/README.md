@@ -1,1 +1,1 @@
-This is a Tcp Client for TcpFramework
+This is a Tcp Client for TcpFramework. The framework allow user implement custom protocols without writing socket communication code. User can focus on protocol only.
